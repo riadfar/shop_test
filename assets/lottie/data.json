@@ -1,0 +1,809 @@
+{
+  "result": [
+    {
+      "shopName": {
+        "en": "Valley Moon - Ice cream",
+        "ar": "قمر الوادي - ايس كريم"
+      },
+      "description": {
+        "en": "Omaya Ice Cream, Cassata Ice Cream, Arabic Ice Cream",
+        "ar": "بوظة أمية، كاسيتا، بوظة عربي"
+      },
+      "minimumOrder": {
+        "amount": 2500,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": " ",
+        "state": "Rif Dimashq",
+        "street": "شارع الوادي"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0953535373",
+        "5957790"
+      ],
+      "estimatedDeliveryTime": "30 minutes",
+      "deliveryRegions": [
+        "Saydnayah"
+      ],
+      "paymentMethod": [],
+      "_id": "5ece128168befd395bad0d78",
+      "ownerFullName": "Rightware",
+      "profilePhoto": "https://www.orianosy.com/image/Smiley/profilePhot.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/Smiley/coverPhoto.jpg",
+      "menu": "5ece128168befd395bad0d7a",
+      "operation": "5ece128168befd395bad0d7b",
+      "review": "5ece128168befd395bad0d7c",
+      "createdAt": "2020-05-27T07:10:57.612Z",
+      "updatedAt": "2026-03-06T13:01:59.274Z",
+      "__v": 0,
+      "categoryType": "Dessert Shop",
+      "deliveryFeeType": "PFBR",
+      "deliveryFeeTag": null,
+      "enable": true,
+      "badgeTag": "Gold",
+      "availability": false
+    },
+    {
+      "shopName": {
+        "en": "Sakhr Snack",
+        "ar": "سناك صخر"
+      },
+      "description": {
+        "en": "Western Sandwich, Shawarma, Chicken, Cold Drinks",
+        "ar": "سندويش غربي، شاورما، فروج، مشروبات باردة"
+      },
+      "minimumOrder": {
+        "amount": 2000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": "بجانب صيدلية لينا",
+        "state": "Rif Dimashq",
+        "street": "ساحة العين"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0988879640",
+        "5950546"
+      ],
+      "estimatedDeliveryTime": "40 minutes",
+      "deliveryRegions": [
+        "Saydnayah"
+      ],
+      "paymentMethod": [],
+      "_id": "5ee1088ef6f7f85cfe3a8c6b",
+      "ownerFullName": "فراس أندراوس",
+      "profilePhoto": "https://www.orianosy.com/image/SakhrSnack/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/SakhrSnack/coverPhoto.jpg",
+      "menu": "5ee1088ef6f7f85cfe3a8c6d",
+      "operation": "5ee1088ef6f7f85cfe3a8c6e",
+      "review": "5ee1088ef6f7f85cfe3a8c6f",
+      "createdAt": "2020-06-10T16:21:34.914Z",
+      "updatedAt": "2025-08-28T15:00:41.716Z",
+      "__v": 0,
+      "availability": false,
+      "categoryType": "Snack",
+      "deliveryFeeType": "PFBR",
+      "deliveryFeeTag": null,
+      "enable": true,
+      "badgeTag": "N"
+    },
+    {
+      "shopName": {
+        "en": "Family 2",
+        "ar": "فاميلي 2"
+      },
+      "description": {
+        "en": "Foul With Olive Oil, Foul With Yogurt, Boiled Chickpea, Fatat, Hummus",
+        "ar": "فول بزيت، فول باللبن، حمص، فتات، مسبحة"
+      },
+      "minimumOrder": {
+        "amount": 1200,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": "  ",
+        "state": "Rif Dimashq",
+        "street": "شارع مدرسة منيب ضاهر "
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0955823610",
+        "5957790"
+      ],
+      "estimatedDeliveryTime": "30 minutes",
+      "deliveryRegions": [
+        "Saydnayah"
+      ],
+      "paymentMethod": [],
+      "_id": "5fa81f4ef253ea4158c9ccfa",
+      "ownerFullName": "جورج شاهين",
+      "profilePhoto": "https://www.orianosy.com/image/Family2/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/Family2/coverPhoto.jpg",
+      "menu": "5fa81f4ef253ea4158c9ccfc",
+      "operation": "5fa81f4ef253ea4158c9ccfd",
+      "review": "5fa81f4ef253ea4158c9ccfe",
+      "createdAt": "2020-11-08T16:39:42.305Z",
+      "updatedAt": "2026-03-16T05:46:09.684Z",
+      "__v": 0,
+      "categoryType": "Restaurant",
+      "deliveryFeeType": "PFBR",
+      "deliveryFeeTag": null,
+      "enable": true,
+      "availability": true,
+      "badgeTag": "Normal"
+    },
+    {
+      "shopName": {
+        "en": "Al Reef Snack",
+        "ar": "سناك الريف"
+      },
+      "description": {
+        "en": "Pressed Sandwich, Luncheon Meat, Ayran, Soft Drinks",
+        "ar": "سندويش عالسخانة، لحومات باردة، لبن عيران، مشروبات غازية."
+      },
+      "minimumOrder": {
+        "amount": 18000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": "----",
+        "state": "Rif Dimashq",
+        "street": "الشارع العام_ مقابل كنيسة آجيا صوفيا"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "953535373",
+        "5950100"
+      ],
+      "estimatedDeliveryTime": "30 minutes",
+      "deliveryRegions": [
+        "Saydnayah"
+      ],
+      "paymentMethod": [],
+      "_id": "5f16c35abf4dc564726ef371",
+      "ownerFullName": "فايز فصحية",
+      "profilePhoto": "https://www.orianosy.com/image/AlReefSnack/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/AlReefSnack/coverPhoto.jpg",
+      "menu": "5f16c35abf4dc564726ef373",
+      "operation": "5f16c35abf4dc564726ef374",
+      "review": "5f16c35abf4dc564726ef375",
+      "createdAt": "2020-07-21T10:28:42.303Z",
+      "updatedAt": "2026-03-16T13:21:25.213Z",
+      "__v": 0,
+      "categoryType": "Snack",
+      "deliveryFeeType": "PFBR",
+      "deliveryFeeTag": null,
+      "enable": true,
+      "availability": true,
+      "badgeTag": "Normal"
+    },
+    {
+      "shopName": {
+        "en": "Al Assel",
+        "ar": "الأصيل"
+      },
+      "description": {
+        "en": "Foal, Fattat, Hummus, Falafel",
+        "ar": "فول، فتات، حمص، مسبحة، متبل، فلافل"
+      },
+      "minimumOrder": {
+        "amount": 5000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Maaret Saidnaya",
+        "country": "Syria",
+        "otherDetails": "  ",
+        "state": "Rif Dimashq",
+        "street": "طريق معرونة"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0953535363",
+        "5957790"
+      ],
+      "estimatedDeliveryTime": "40 minutes",
+      "deliveryRegions": [
+        "Saydnayah"
+      ],
+      "paymentMethod": [],
+      "_id": "624581457767242741c6b168",
+      "ownerFullName": "ماهر علم ",
+      "profilePhoto": "https://www.orianosy.com/image/AlAssel/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/AlAssel/coverPhoto.jpg",
+      "menu": "624581457767242741c6b16a",
+      "operation": "624581457767242741c6b16b",
+      "review": "624581457767242741c6b16c",
+      "createdAt": "2022-03-31T10:24:05.750Z",
+      "updatedAt": "2026-03-16T05:46:14.787Z",
+      "__v": 0,
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "enable": true,
+      "categoryType": "Restaurant",
+      "availability": true,
+      "badgeTag": "Gold"
+    },
+    {
+      "shopName": {
+        "en": "Verona",
+        "ar": "فيرونا"
+      },
+      "description": {
+        "en": "Eastern Sweets, Croissants, Cake, Bread Sticks, Petite Four and Cookies",
+        "ar": "حلويات شرقية كروسان، كيك، كعك، بيتي فور وكوكيز"
+      },
+      "minimumOrder": {
+        "amount": 3000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": " ",
+        "state": "Rif Dimashq",
+        "street": "ساحة العين"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0953535373",
+        "5956935"
+      ],
+      "estimatedDeliveryTime": "30 minutes",
+      "deliveryRegions": [
+        "Saydnayah",
+        "Maaret Saidnaya"
+      ],
+      "paymentMethod": [],
+      "_id": "624589987767242741c6b17a",
+      "ownerFullName": "فادي قلومة ",
+      "profilePhoto": "https://www.orianosy.com/image/Verona/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/Verona/coverPhoto.jpg",
+      "menu": "624589987767242741c6b17c",
+      "operation": "624589987767242741c6b17d",
+      "review": "624589987767242741c6b17e",
+      "createdAt": "2022-03-31T10:59:36.980Z",
+      "updatedAt": "2026-03-16T08:51:51.868Z",
+      "__v": 0,
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "availability": true,
+      "enable": true,
+      "categoryType": "Dessert Shop",
+      "badgeTag": "N"
+    },
+    {
+      "shopName": {
+        "en": "Joseph Market",
+        "ar": "جوزيف ماركت"
+      },
+      "description": {
+        "en": "Diaries, Sweet Stuff",
+        "ar": "البان واجبان، لوازم حلويات"
+      },
+      "minimumOrder": {
+        "amount": 5000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": "مقابل الركن الأخضر ",
+        "state": "Rif Dimashq",
+        "street": "بجانب الفرن"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0953535373",
+        "5951990"
+      ],
+      "estimatedDeliveryTime": "20 minutes",
+      "deliveryRegions": [
+        "Saydnayah",
+        "Maaret Saidnaya"
+      ],
+      "paymentMethod": [],
+      "_id": "625a8855d7cae60b494c5fe6",
+      "ownerFullName": "جوزيف هلالة",
+      "profilePhoto": "https://www.orianosy.com/image/JosephMarket/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/JosephMarket/coverPhoto.jpg",
+      "menu": "625a8855d7cae60b494c5fe8",
+      "operation": "625a8855d7cae60b494c5fe9",
+      "review": "625a8855d7cae60b494c5fea",
+      "createdAt": "2022-04-16T09:11:49.335Z",
+      "updatedAt": "2026-03-16T05:46:23.796Z",
+      "__v": 0,
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "availability": true,
+      "enable": true,
+      "categoryType": "Grocery Shop",
+      "badgeTag": "N"
+    },
+    {
+      "shopName": {
+        "en": "Pureness Restaurant",
+        "ar": "بيورنس"
+      },
+      "description": {
+        "en": "Western Sandwich, Western Meals, French Fries, Cold Drinks",
+        "ar": "ساندويش غربي، وجبات غربي، بطاطا، مشروبات باردة"
+      },
+      "minimumOrder": {
+        "amount": 1000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": " ",
+        "state": "Rif Dimashq",
+        "street": "شارع التجلي"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0953535373",
+        "5957756"
+      ],
+      "estimatedDeliveryTime": "45 minutes",
+      "deliveryRegions": [
+        "Saydnayah",
+        "Maaret Saidnaya"
+      ],
+      "paymentMethod": [],
+      "_id": "626a6de5d7cae60b494c8828",
+      "ownerFullName": "غيث الخوري",
+      "profilePhoto": "https://www.orianosy.com/image/PurenessRestaurant/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/PurenessRestaurant/coverPhoto.jpg",
+      "menu": "626a6de5d7cae60b494c882a",
+      "operation": "626a6de5d7cae60b494c882b",
+      "review": "626a6de5d7cae60b494c882c",
+      "createdAt": "2022-04-28T10:35:17.336Z",
+      "updatedAt": "2026-03-12T22:31:37.130Z",
+      "__v": 0,
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "availability": false,
+      "enable": true,
+      "categoryType": "Snack"
+    },
+    {
+      "shopName": {
+        "en": "Al Daiaa Chicken",
+        "ar": "فروج الضيعة"
+      },
+      "description": {
+        "en": "Raw Chicken, Legs, Drumsticks, Wings, Breast",
+        "ar": "فروج نيء، فخاذ، دبوس، جوانح، صدر دجاج "
+      },
+      "minimumOrder": {
+        "amount": 5000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": " ",
+        "state": "Rif Dimashq",
+        "street": "السوق"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0953535373",
+        "5957790"
+      ],
+      "estimatedDeliveryTime": "15 minutes",
+      "deliveryRegions": [
+        "Saydnayah",
+        "Maaret Saidnaya"
+      ],
+      "paymentMethod": [],
+      "_id": "6299d29940fafa5dcbe78b33",
+      "ownerFullName": "سمير حداد",
+      "profilePhoto": "https://www.orianosy.com/image/AlDaiaaChicken/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/AlDaiaaChicken/coverPhoto.jpg",
+      "menu": "6299d29940fafa5dcbe78b35",
+      "operation": "6299d29940fafa5dcbe78b36",
+      "review": "6299d29940fafa5dcbe78b37",
+      "createdAt": "2022-06-03T09:21:29.402Z",
+      "updatedAt": "2026-03-16T09:56:33.767Z",
+      "__v": 0,
+      "enable": true,
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "categoryType": "Butcher Shop",
+      "availability": false,
+      "badgeTag": "Gold"
+    },
+    {
+      "shopName": {
+        "en": "Al Saydeh Saj",
+        "ar": "صاج السيدة"
+      },
+      "description": {
+        "en": "Thyme, Cheese, Kashkaval",
+        "ar": "زعتر، محمرة، جبنة"
+      },
+      "minimumOrder": {
+        "amount": 3000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": "  ",
+        "state": "Rif Dimashq",
+        "street": "مقابل درج الدير"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0988058350",
+        "0115951311"
+      ],
+      "estimatedDeliveryTime": "45 minutes",
+      "deliveryRegions": [
+        "Saydnayah",
+        "Maaret Saidnaya"
+      ],
+      "paymentMethod": [],
+      "_id": "62c20c357fbcfb2ee92da049",
+      "ownerFullName": "فادي الزين",
+      "profilePhoto": "https://www.orianosy.com/image/AlSaydehSaj/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/AlSaydehSaj/coverPhoto.jpg",
+      "menu": "62c20c357fbcfb2ee92da04b",
+      "operation": "62c20c357fbcfb2ee92da04c",
+      "review": "62c20c357fbcfb2ee92da04d",
+      "createdAt": "2022-07-03T21:37:57.539Z",
+      "updatedAt": "2025-05-17T05:32:25.517Z",
+      "__v": 0,
+      "enable": true,
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "availability": false,
+      "categoryType": "Restaurant",
+      "badgeTag": "T"
+    },
+    {
+      "shopName": {
+        "en": "Nedal Market",
+        "ar": "بقالية نضال"
+      },
+      "description": {
+        "en": "Dairies, Canned Food, Soft Drinks",
+        "ar": "منظفات، ألبان وأجبان، معلبات، مشروبات غازية"
+      },
+      "minimumOrder": {
+        "amount": 2500,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": " ",
+        "state": "Rif Dimashq",
+        "street": "بعد مطعم فاميلي"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0932808932",
+        "5956551"
+      ],
+      "estimatedDeliveryTime": "15 minutes",
+      "deliveryRegions": [
+        "Saydnayah"
+      ],
+      "paymentMethod": [],
+      "_id": "62e4f9109035f6519e294e1b",
+      "ownerFullName": "نضال هلالة",
+      "profilePhoto": "https://www.orianosy.com/image/NedalMarket/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/NedalMarket/coverPhoto.jpg",
+      "menu": "62e4f9109035f6519e294e1d",
+      "operation": "62e4f9109035f6519e294e1e",
+      "review": "62e4f9109035f6519e294e1f",
+      "createdAt": "2022-07-30T09:25:36.076Z",
+      "updatedAt": "2026-03-16T05:46:33.938Z",
+      "__v": 0,
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "enable": true,
+      "categoryType": "Grocery Shop",
+      "availability": true,
+      "badgeTag": "N"
+    },
+    {
+      "shopName": {
+        "en": "Valley Moon Restaurant",
+        "ar": "مطعم قمر الوادي"
+      },
+      "description": {
+        "en": "Western Sandwiches, Western Meals, Pasta, Barbecue, Appetizers, Pizza, Cold Drinks",
+        "ar": "ساندويش غربي، وجبات غربي، باستا، مشاوي، مقبلات باردة، مقبلات ساخنة، بيتزا، مشروبات غازية"
+      },
+      "minimumOrder": {
+        "amount": 30000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": " ",
+        "state": "Rif Dimashq",
+        "street": "نزلة الروضة"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0953535373",
+        "5951222"
+      ],
+      "estimatedDeliveryTime": "40 minutes",
+      "deliveryRegions": [
+        "Saydnayah"
+      ],
+      "paymentMethod": [],
+      "_id": "62ffa4637f6921136278c9e5",
+      "ownerFullName": "عيسى هلالة",
+      "profilePhoto": "https://www.orianosy.com/image/ValleyMoonRestaurant/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/ValleyMoonRestaurant/coverPhoto.jpg",
+      "menu": "62ffa4637f6921136278c9e7",
+      "operation": "62ffa4637f6921136278c9e8",
+      "review": "62ffa4637f6921136278c9e9",
+      "createdAt": "2022-08-19T14:55:31.606Z",
+      "updatedAt": "2026-03-16T10:00:18.726Z",
+      "__v": 0,
+      "enable": true,
+      "categoryType": "Restaurant",
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "availability": true,
+      "badgeTag": "N"
+    },
+    {
+      "shopName": {
+        "en": "Al Saydeh Pastry",
+        "ar": "معجنات السيدة"
+      },
+      "description": {
+        "en": "Manakish, Thyme, Muhammara, Kashkaval, Sfiha",
+        "ar": "مناقيش، جبنة، زعتر، محمرة، قشقوان، كروك، صفيحة"
+      },
+      "minimumOrder": {
+        "amount": 1000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": "مقابل درج السيدة",
+        "state": "Rif Dimashq",
+        "street": "السوق"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0953535373",
+        "5957790"
+      ],
+      "estimatedDeliveryTime": "45 minutes",
+      "deliveryRegions": [
+        "Saydnayah"
+      ],
+      "paymentMethod": [],
+      "_id": "639d850baf75657d82ebbef8",
+      "ownerFullName": "فادي الزين",
+      "profilePhoto": "https://www.orianosy.com/image/AlSaydehPastry/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/AlSaydehPastry/coverPhoto.jpg",
+      "menu": "639d850baf75657d82ebbefa",
+      "operation": "639d850baf75657d82ebbefb",
+      "review": "639d850baf75657d82ebbefc",
+      "createdAt": "2022-12-17T08:59:55.340Z",
+      "updatedAt": "2026-03-16T12:02:01.599Z",
+      "__v": 0,
+      "availability": false,
+      "enable": true,
+      "categoryType": "Restaurant",
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "badgeTag": "N"
+    },
+    {
+      "shopName": {
+        "en": "Al Nawras Restaurant",
+        "ar": "مطعم النورس"
+      },
+      "description": {
+        "en": "Salads, Cold & Hot Appetizers, Sandwich, Meals, Pizza, BBQ, Drinks",
+        "ar": "سلطات، مقبلات باردة، مقبلات ساخنة، ساندويش، وجبات، بيتزا، مشاوي، مشروبات"
+      },
+      "minimumOrder": {
+        "amount": 20000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Maaret Saidnaya",
+        "country": "Syria",
+        "otherDetails": " ",
+        "state": "Rif Dimashq",
+        "street": "شارع ماربيا"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0953535373",
+        "0115957790"
+      ],
+      "estimatedDeliveryTime": "40 minutes",
+      "deliveryRegions": [
+        "Saydnayah"
+      ],
+      "paymentMethod": [],
+      "_id": "64db8d079622a5113a0546e4",
+      "ownerFullName": "بطرس الشيخ",
+      "profilePhoto": "https://www.orianosy.com/image/AlNawrasRestaurant/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/AlNawrasRestaurant/coverPhoto.jpg",
+      "menu": "64db8d079622a5113a0546e6",
+      "operation": "64db8d079622a5113a0546e7",
+      "review": "64db8d079622a5113a0546e8",
+      "createdAt": "2023-08-15T14:34:47.383Z",
+      "updatedAt": "2026-03-15T21:34:10.480Z",
+      "__v": 0,
+      "categoryType": "Restaurant",
+      "availability": false,
+      "enable": true,
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "badgeTag": "Gold"
+    },
+    {
+      "shopName": {
+        "en": "Al Saydeh Mini Market",
+        "ar": "ميني ماركت السيدة"
+      },
+      "description": {
+        "en": "Dairies, Canned Food, Soft Drinks ",
+        "ar": "منظفات، ألبان وأجبان، معلبات، مشروبات غازية "
+      },
+      "minimumOrder": {
+        "amount": 8000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": " ",
+        "state": "Rif Dimashq",
+        "street": "طريق دوار السيدة"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0939966664",
+        "5954679"
+      ],
+      "estimatedDeliveryTime": "40 minutes",
+      "deliveryRegions": [
+        "Saydnayah",
+        "Maaret Saidnaya"
+      ],
+      "paymentMethod": [],
+      "_id": "6857afc1eb65268c80060a5d",
+      "ownerFullName": "فراس ابو موسى",
+      "profilePhoto": "https://www.orianosy.com/image/AlSaydehMiniMarket/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/AlSaydehMiniMarket/coverPhoto.jpg",
+      "menu": "6857afc1eb65268c80060a5f",
+      "operation": "6857afc1eb65268c80060a60",
+      "review": "6857afc1eb65268c80060a61",
+      "createdAt": "2025-06-22T07:24:49.534Z",
+      "updatedAt": "2026-03-16T08:51:47.269Z",
+      "__v": 0,
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBR",
+      "categoryType": "Grocery Shop",
+      "enable": true,
+      "availability": true
+    },
+    {
+      "shopName": {
+        "en": "Al-Jabal  Butcher Shop",
+        "ar": "ملحمة الجبل"
+      },
+      "description": {
+        "en": "Veal meat, Fat tail, Raw chicken",
+        "ar": "لحم عجل، لية غنم، فروج نيء"
+      },
+      "minimumOrder": {
+        "amount": 20000,
+        "currency": "S.P"
+      },
+      "address": {
+        "city": "Saydnayah",
+        "country": "Syria",
+        "otherDetails": " ",
+        "state": "Rif Dimashq",
+        "street": "ساحة الركن الأخضر"
+      },
+      "commission": {
+        "type": "Percentage",
+        "value": 5
+      },
+      "contactInfo": [
+        "0956615980",
+        "5953765"
+      ],
+      "estimatedDeliveryTime": "40 minutes",
+      "deliveryRegions": [
+        "Saydnayah",
+        "Maaret Saidnaya"
+      ],
+      "paymentMethod": [],
+      "_id": "68592f33eb65268c80060bbe",
+      "ownerFullName": "ماهر التلي",
+      "profilePhoto": "https://www.orianosy.com/image/Al-JabalButcherShop/profilePhoto.jpg",
+      "coverPhoto": "https://www.orianosy.com/image/Al-JabalButcherShop/coverPhoto.jpg",
+      "menu": "68592f33eb65268c80060bc0",
+      "operation": "68592f33eb65268c80060bc1",
+      "review": "68592f33eb65268c80060bc2",
+      "createdAt": "2025-06-23T10:40:51.514Z",
+      "updatedAt": "2026-03-16T05:46:41.502Z",
+      "__v": 0,
+      "deliveryFeeTag": null,
+      "deliveryFeeType": "PFBS",
+      "categoryType": "Butcher Shop",
+      "enable": true,
+      "badgeTag": "Gold",
+      "availability": true
+    }
+  ]
+}
