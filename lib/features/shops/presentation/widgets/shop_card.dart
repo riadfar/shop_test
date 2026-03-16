@@ -63,7 +63,7 @@ class _ShopCardState extends State<ShopCard> {
                   shopName: isAr ? widget.shop.nameAr : widget.shop.nameEn,
                   isOpen: widget.shop.availability,
                 ),
-                _ShopDetails(shop: widget.shop, isAr: isAr, isDark: isDark),
+                _ShopDetails(shop: widget.shop, isAr: isAr),
               ],
             ),
           ),
@@ -76,13 +76,12 @@ class _ShopCardState extends State<ShopCard> {
 class _ShopDetails extends StatelessWidget {
   final Shop shop;
   final bool isAr;
-  final bool isDark;
 
-  const _ShopDetails(
-      {required this.shop, required this.isAr, required this.isDark});
+  const _ShopDetails({required this.shop, required this.isAr});
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     final borderColor =
         isDark ? AppColors.borderDark : AppColors.borderLight;
     return Padding(

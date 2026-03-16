@@ -18,18 +18,16 @@ class AllShopsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
     return BlocProvider(
       create: (_) => getIt<ShopBloc>()..add(const FetchShops()),
-      child: _AllShopsView(args: args, isDark: isDark),
+      child: _AllShopsView(args: args),
     );
   }
 }
 
 class _AllShopsView extends StatefulWidget {
   final AllShopsArgs args;
-  final bool isDark;
-  const _AllShopsView({required this.args, required this.isDark});
+  const _AllShopsView({required this.args});
 
   @override
   State<_AllShopsView> createState() => _AllShopsViewState();
@@ -48,14 +46,15 @@ class _AllShopsViewState extends State<_AllShopsView> {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return Scaffold(
       backgroundColor:
-          widget.isDark ? AppColors.backgroundDark : AppColors.backgroundLight,
+          isDark ? AppColors.backgroundDark : AppColors.backgroundLight,
       body: SafeArea(
         child: CustomScrollView(
           physics: const BouncingScrollPhysics(),
           slivers: [
-            SliverToBoxAdapter(child: _ShopsHeader(isDark: widget.isDark)),
+            const SliverToBoxAdapter(child: _ShopsHeader()),
             SliverToBoxAdapter(
               child: ShopsSearchBar(autoFocus: widget.args.autoFocusSearch),
             ),
@@ -69,11 +68,11 @@ class _AllShopsViewState extends State<_AllShopsView> {
 }
 
 class _ShopsHeader extends StatelessWidget {
-  final bool isDark;
-  const _ShopsHeader({required this.isDark});
+  const _ShopsHeader();
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     final onSurface =
         isDark ? AppColors.onSurfaceDark : AppColors.onSurfaceLight;
     final isAr = Localizations.localeOf(context).languageCode == 'ar';

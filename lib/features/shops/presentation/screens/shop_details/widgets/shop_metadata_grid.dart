@@ -13,7 +13,6 @@ class ShopMetadataGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
     final numeric = shop.estimatedDeliveryTime
         .replaceAll(RegExp(r'[^0-9\-–]'), '')
         .trim();
@@ -31,21 +30,18 @@ class ShopMetadataGrid extends StatelessWidget {
       child: Row(
         children: [
           _MetaTile(
-            isDark: isDark,
             icon: Icons.schedule_outlined,
             value: etaLabel,
             label: context.tr('eta'),
           ),
           const SizedBox(width: 12),
           _MetaTile(
-            isDark: isDark,
             icon: Icons.shopping_bag_outlined,
             value: minOrder,
             label: context.tr('min_order'),
           ),
           const SizedBox(width: 12),
           _MetaTile(
-            isDark: isDark,
             icon: Icons.delivery_dining_outlined,
             value: feeLabel,
             label: context.tr('delivery_fee'),
@@ -57,13 +53,11 @@ class ShopMetadataGrid extends StatelessWidget {
 }
 
 class _MetaTile extends StatelessWidget {
-  final bool isDark;
   final IconData icon;
   final String value;
   final String label;
 
   const _MetaTile({
-    required this.isDark,
     required this.icon,
     required this.value,
     required this.label,
@@ -71,6 +65,7 @@ class _MetaTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     final onSurface =
         isDark ? AppColors.onSurfaceDark : AppColors.onSurfaceLight;
     return Expanded(

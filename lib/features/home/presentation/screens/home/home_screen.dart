@@ -36,6 +36,17 @@ class HomeScreen extends StatelessWidget {
                 const SliverToBoxAdapter(child: SearchBarWidget()),
                 SliverToBoxAdapter(
                   child: SectionTitle(
+                    title: ctx.tr('featured_shops'),
+                    onSeeAll: () => Navigator.push(
+                      ctx,
+                      MaterialPageRoute(
+                          builder: (_) => const AllShopsScreen()),
+                    ),
+                  ),
+                ),
+                const SliverFeaturedShopList(),
+                SliverToBoxAdapter(
+                  child: SectionTitle(
                       title: ctx.tr('categories_section')),
                 ),
                 const SliverToBoxAdapter(
@@ -59,17 +70,7 @@ class HomeScreen extends StatelessWidget {
                       title: ctx.tr('trending_section'),
                       items: DummyData.trendingItems),
                 ),
-                SliverToBoxAdapter(
-                  child: SectionTitle(
-                    title: ctx.tr('featured_shops'),
-                    onSeeAll: () => Navigator.push(
-                      ctx,
-                      MaterialPageRoute(
-                          builder: (_) => const AllShopsScreen()),
-                    ),
-                  ),
-                ),
-                const SliverFeaturedShopList(),
+
                 const SliverToBoxAdapter(child: SizedBox(height: 24)),
               ],
             ),
