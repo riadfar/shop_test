@@ -45,17 +45,19 @@ class _InfoChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isDark = Theme.of(context).brightness == Brightness.dark;
+    final iconColor = isDark ? AppColors.iconDark : AppColors.iconLight;
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Icon(icon, size: 13, color: AppColors.iconLight),
+        Icon(icon, size: 13, color: iconColor),
         const SizedBox(width: 3),
         Text(
           label,
           style: Theme.of(context)
               .textTheme
               .labelSmall
-              ?.copyWith(color: AppColors.iconLight),
+              ?.copyWith(color: iconColor),
         ),
       ],
     );

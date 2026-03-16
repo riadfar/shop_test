@@ -214,6 +214,14 @@ class AppLocalizations {
     'currency_symbol': 'S.P',
     'shop_open': 'Open',
     'shop_closed': 'Closed',
+    'eta': 'Est. Delivery',
+    'min_order': 'Min. Order',
+    'delivery_fee': 'Delivery Fee',
+    'free_delivery': 'Free',
+    'call_now': 'Call Now',
+    'address': 'Address',
+    'delivery_regions': 'Delivery Areas',
+    'shop_details': 'Shop Details',
   };
 
   static const Map<String, String> _ar = {
@@ -401,6 +409,14 @@ class AppLocalizations {
     'currency_symbol': 'ل.س',
     'shop_open': 'مفتوح',
     'shop_closed': 'مغلق',
+    'eta': 'وقت التوصيل',
+    'min_order': 'أقل طلب',
+    'delivery_fee': 'رسوم التوصيل',
+    'free_delivery': 'مجاناً',
+    'call_now': 'اتصل الآن',
+    'address': 'العنوان',
+    'delivery_regions': 'مناطق التوصيل',
+    'shop_details': 'تفاصيل المطعم',
   };
 }
 

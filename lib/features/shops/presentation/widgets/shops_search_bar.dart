@@ -21,11 +21,15 @@ class ShopsSearchBar extends StatefulWidget {
 class _ShopsSearchBarState extends State<ShopsSearchBar> {
   final _controller = TextEditingController();
   late final FocusNode _focus;
+  bool _isFocused = false;
 
   @override
   void initState() {
     super.initState();
     _focus = FocusNode();
+    _focus.addListener(() {
+      if (mounted) setState(() => _isFocused = _focus.hasFocus);
+    });
     if (widget.autoFocus) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (mounted) _focus.requestFocus();
@@ -50,6 +54,12 @@ class _ShopsSearchBarState extends State<ShopsSearchBar> {
         decoration: BoxDecoration(
           color: isDark ? AppColors.surfaceDark : AppColors.surfaceLight,
           borderRadius: BorderRadius.circular(16),
+          border: Border.all(
+            color: _isFocused
+                ? AppColors.primary
+                : (isDark ? AppColors.borderDark : AppColors.borderLight),
+            width: _isFocused ? 1.5 : 1.0,
+          ),
           boxShadow: [
             BoxShadow(
               color: isDark ? AppColors.shadowDark : AppColors.shadowLight,
@@ -77,6 +87,7 @@ class _ShopsSearchBarState extends State<ShopsSearchBar> {
                   fontSize: 14,
                 ),
                 decoration: InputDecoration(
+                  filled: false,
                   hintText: context.tr('search_hint'),
                   hintStyle: const TextStyle(
                       color: AppColors.iconLight, fontSize: 14),

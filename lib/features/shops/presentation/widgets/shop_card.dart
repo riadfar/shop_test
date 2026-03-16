@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_decorations.dart';
 import '../../domain/entities/shop.dart';
+import '../screens/shop_details/shop_details_screen.dart';
 import 'shop_card_image.dart';
 import 'shop_card_info_row.dart';
 
@@ -23,7 +24,15 @@ class _ShopCardState extends State<ShopCard> {
   void _onTapDown(TapDownDetails _) => setState(() => _scale = 0.97);
   void _onTapUp(TapUpDetails _) {
     setState(() => _scale = 1.0);
-    widget.onTap?.call();
+    if (widget.onTap != null) {
+      widget.onTap!();
+    } else {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (_) => ShopDetailsScreen(shop: widget.shop)),
+      );
+    }
   }
 
   void _onTapCancel() => setState(() => _scale = 1.0);
@@ -31,6 +40,7 @@ class _ShopCardState extends State<ShopCard> {
   @override
   Widget build(BuildContext context) {
     final isAr = Localizations.localeOf(context).languageCode == 'ar';
+    final isDark = Theme.of(context).brightness == Brightness.dark;
     return GestureDetector(
       onTapDown: _onTapDown,
       onTapUp: _onTapUp,
@@ -40,7 +50,9 @@ class _ShopCardState extends State<ShopCard> {
         duration: const Duration(milliseconds: 120),
         curve: Curves.easeOut,
         child: Container(
-          decoration: AppDecorations.cardDecorationLight,
+          decoration: isDark
+              ? AppDecorations.cardDecorationDark
+              : AppDecorations.cardDecorationLight,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(12),
             child: Column(
@@ -51,7 +63,7 @@ class _ShopCardState extends State<ShopCard> {
                   shopName: isAr ? widget.shop.nameAr : widget.shop.nameEn,
                   isOpen: widget.shop.availability,
                 ),
-                _ShopDetails(shop: widget.shop, isAr: isAr),
+                _ShopDetails(shop: widget.shop, isAr: isAr, isDark: isDark),
               ],
             ),
           ),
@@ -64,11 +76,15 @@ class _ShopCardState extends State<ShopCard> {
 class _ShopDetails extends StatelessWidget {
   final Shop shop;
   final bool isAr;
+  final bool isDark;
 
-  const _ShopDetails({required this.shop, required this.isAr});
+  const _ShopDetails(
+      {required this.shop, required this.isAr, required this.isDark});
 
   @override
   Widget build(BuildContext context) {
+    final borderColor =
+        isDark ? AppColors.borderDark : AppColors.borderLight;
     return Padding(
       padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
       child: Column(
@@ -79,12 +95,13 @@ class _ShopDetails extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .bodySmall
-                ?.copyWith(color: AppColors.iconLight),
+                ?.copyWith(
+                    color: isDark ? AppColors.iconDark : AppColors.iconLight),
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
           ),
           const SizedBox(height: 10),
-          const Divider(height: 1, thickness: 1, color: AppColors.borderLight),
+          Divider(height: 1, thickness: 1, color: borderColor),
           const SizedBox(height: 10),
           ShopCardInfoRow(shop: shop),
         ],

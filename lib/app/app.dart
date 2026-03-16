@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return DynamicTextScaling(
       child: MaterialApp(
-        title: 'Flutter Clean Architecture',
+        title: 'Flavor Rush',
         debugShowCheckedModeBanner: false,
         theme: _themeManager.getTheme(_theme),
         locale: _locale,

@@ -12,12 +12,17 @@ class ShopModel extends Shop {
     required super.minimumOrderCurrency,
     super.deliveryFee = 0.0,
     required super.city,
+    super.state = '',
+    super.street = '',
+    super.otherDetails = '',
     required super.country,
     required super.availability,
     required super.coverPhoto,
     required super.profilePhoto,
     required super.categoryType,
     required super.badgeTag,
+    super.contactInfo = const [],
+    super.deliveryRegions = const [],
   });
 
   factory ShopModel.fromJson(Map<String, dynamic> json) {
@@ -37,12 +42,23 @@ class ShopModel extends Shop {
       minimumOrderCurrency: minimumOrder['currency'] as String? ?? '',
       deliveryFee: (json['deliveryFee'] as num?)?.toDouble() ?? 0.0,
       city: address['city'] as String? ?? '',
+      state: address['state'] as String? ?? '',
+      street: address['street'] as String? ?? '',
+      otherDetails: address['otherDetails'] as String? ?? '',
       country: address['country'] as String? ?? '',
       availability: json['availability'] as bool? ?? false,
       coverPhoto: json['coverPhoto'] as String? ?? '',
       profilePhoto: json['profilePhoto'] as String? ?? '',
       categoryType: json['categoryType'] as String? ?? '',
       badgeTag: json['badgeTag'] as String? ?? '',
+      contactInfo: (json['contactInfo'] as List<dynamic>?)
+              ?.whereType<String>()
+              .toList() ??
+          [],
+      deliveryRegions: (json['deliveryRegions'] as List<dynamic>?)
+              ?.whereType<String>()
+              .toList() ??
+          [],
     );
   }
 }
