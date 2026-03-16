@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../../core/theme/app_colors.dart';
 import '../../../../../../core/theme/app_text_styles.dart';
 import '../../../../data/models/category_model.dart';
+import '../../../../../shops/presentation/bloc/shop_bloc.dart';
+import '../../../../../shops/presentation/bloc/shop_event.dart';
 
 class CategoryList extends StatefulWidget {
   final List<CategoryModel> categories;
@@ -25,7 +28,12 @@ class _CategoryListState extends State<CategoryList> {
           category: widget.categories[i],
           isSelected: _selected == i,
           isAr: isAr,
-          onTap: () => setState(() => _selected = i),
+          onTap: () {
+            setState(() => _selected = i);
+            if (i == 0) {
+              context.read<ShopBloc>().add(const ClearFilters());
+            }
+          },
         ),
       ),
     );

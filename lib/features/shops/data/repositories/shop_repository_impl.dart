@@ -4,7 +4,7 @@ import '../../../../core/error/exceptions.dart';
 import '../../../../core/error/failures.dart';
 import '../../domain/entities/shop.dart';
 import '../../domain/repositories/shop_repository.dart';
-import '../datasources/shop_remote_data_source.dart';
+import '../data_sources/shop_remote_data_source.dart';
 
 class ShopRepositoryImpl implements ShopRepository {
   final ShopRemoteDataSource remoteDataSource;

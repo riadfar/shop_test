@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import '../../../../core/theme/app_colors.dart';
 import 'bottom_wave_clipper.dart';
 
 class HeroSection extends StatelessWidget {
   final String appName;
   final String appSubtitle;
-  final IconData appLogo;
+  final String appLogo;
 
   const HeroSection({
-    super.key, required this.appName, required this.appSubtitle, required this.appLogo,
+    super.key,
+    required this.appName,
+    required this.appSubtitle,
+    required this.appLogo,
   });
 
   @override
@@ -19,8 +23,10 @@ class HeroSection extends StatelessWidget {
         height: 290,
         decoration: const BoxDecoration(
           gradient: LinearGradient(
-            begin: Alignment.topLeft, end: Alignment.bottomRight,
-            colors: [AppColors.primary, AppColors.primaryVariant], stops: [0.0, 1.0],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [AppColors.primary, AppColors.primaryVariant],
+            stops: [0.0, 1.0],
           ),
         ),
         child: Stack(
@@ -39,18 +45,38 @@ class HeroSection extends StatelessWidget {
                   children: [
                     const SizedBox(height: 12),
                     Container(
-                      width: 84, height: 84,
+                      width: 84,
+                      height: 84,
                       decoration: BoxDecoration(
                         color: AppColors.onPrimary.withOpacity(0.16),
                         borderRadius: BorderRadius.circular(26),
-                        border: Border.all(color: AppColors.onPrimary.withOpacity(0.28), width: 1.5),
+                        border: Border.all(
+                            color: AppColors.onPrimary.withOpacity(0.28),
+                            width: 1.5),
                       ),
-                      child: Icon(appLogo, size: 46, color: AppColors.onPrimary),
+                      child: Center(
+                        child: SvgPicture.asset(
+                          appLogo,
+                          width: 64,
+                          height: 64,
+                        ),
+                      ),
                     ),
                     const SizedBox(height: 16),
-                    Text(appName, style: const TextStyle(color: AppColors.onPrimary, fontSize: 28, fontWeight: FontWeight.w800, letterSpacing: -0.6, height: 1.1)),
+                    Text(appName,
+                        style: const TextStyle(
+                            color: AppColors.onPrimary,
+                            fontSize: 28,
+                            fontWeight: FontWeight.w800,
+                            letterSpacing: -0.6,
+                            height: 1.1)),
                     const SizedBox(height: 5),
-                    Text(appSubtitle, style: TextStyle(color: AppColors.onPrimary.withOpacity(0.72), fontSize: 13, fontWeight: FontWeight.w400, letterSpacing: 0.2)),
+                    Text(appSubtitle,
+                        style: TextStyle(
+                            color: AppColors.onPrimary.withOpacity(0.72),
+                            fontSize: 13,
+                            fontWeight: FontWeight.w400,
+                            letterSpacing: 0.2)),
                   ],
                 ),
               ),
@@ -66,15 +92,27 @@ class _DecoCircle extends StatelessWidget {
   final double radius, opacity;
   final double? left, right, top, bottom;
 
-  const _DecoCircle({required this.radius, required this.opacity, this.left, this.right, this.top, this.bottom});
+  const _DecoCircle(
+      {required this.radius,
+      required this.opacity,
+      this.left,
+      this.right,
+      this.top,
+      this.bottom});
 
   @override
   Widget build(BuildContext context) {
     return Positioned(
-      left: left, right: right, top: top, bottom: bottom,
+      left: left,
+      right: right,
+      top: top,
+      bottom: bottom,
       child: Container(
-        width: radius * 2, height: radius * 2,
-        decoration: BoxDecoration(shape: BoxShape.circle, color: AppColors.onPrimary.withOpacity(opacity)),
+        width: radius * 2,
+        height: radius * 2,
+        decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: AppColors.onPrimary.withOpacity(opacity)),
       ),
     );
   }

@@ -9,6 +9,7 @@ class Shop extends Equatable {
   final String estimatedDeliveryTime;
   final double minimumOrderAmount;
   final String minimumOrderCurrency;
+  final double deliveryFee;
   final String city;
   final String country;
   final bool availability;
@@ -26,6 +27,7 @@ class Shop extends Equatable {
     required this.estimatedDeliveryTime,
     required this.minimumOrderAmount,
     required this.minimumOrderCurrency,
+    this.deliveryFee = 0.0,
     required this.city,
     required this.country,
     required this.availability,
@@ -37,20 +39,9 @@ class Shop extends Equatable {
 
   @override
   List<Object?> get props => [
-        id,
-        nameEn,
-        nameAr,
-        descriptionEn,
-        descriptionAr,
-        estimatedDeliveryTime,
-        minimumOrderAmount,
-        minimumOrderCurrency,
-        city,
-        country,
-        availability,
-        coverPhoto,
-        profilePhoto,
-        categoryType,
-        badgeTag,
+        id, nameEn, nameAr, descriptionEn, descriptionAr,
+        estimatedDeliveryTime, minimumOrderAmount, minimumOrderCurrency,
+        deliveryFee, city, country, availability,
+        coverPhoto, profilePhoto, categoryType, badgeTag,
       ];
 }

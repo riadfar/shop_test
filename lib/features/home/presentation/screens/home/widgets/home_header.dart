@@ -38,7 +38,7 @@ class HomeHeader extends StatelessWidget {
                   children: [
                     Icon(Icons.location_on_rounded, color: AppColors.primary, size: 15),
                     const SizedBox(width: 3),
-                    Text(isAr ? 'نيويورك، أمريكا' : 'New York, USA',
+                    Text(context.tr('home_city'),
                       style: AppTextStyles.textTheme.bodySmall?.copyWith(
                         color: onSurface, fontWeight: FontWeight.w600)),
                     const SizedBox(width: 2),

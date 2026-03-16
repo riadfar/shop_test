@@ -21,8 +21,7 @@ class _SplashScreenState extends State<SplashScreen>
   static const String _appName = 'FlavorRush';
   static const String _appTagline = 'Crave it. Order it. Love it.';
   static const IconData _appLogoIcon = Icons.local_fire_department_rounded;
-  static const String? _appLogoAsset = null;
-
+  static const String? _appLogoAsset = 'assets/icons/logo.png';
   late final SplashAnimations _anims;
 
   @override

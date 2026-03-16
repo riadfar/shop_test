@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:rightware_test/features/shops/presentation/bloc/shop_bloc.dart';
 import '../core/theme/theme_manager.dart';
 import '../core/localization/app_localizations.dart';
 import '../core/localization/dynamic_scaling.dart';
@@ -128,8 +130,7 @@ class _OtpEntry extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final email =
-        ModalRoute.of(context)?.settings.arguments as String? ?? '';
+    final email = ModalRoute.of(context)?.settings.arguments as String? ?? '';
     return OtpScreen(
       email: email,
       onVerified: (email) =>
@@ -144,8 +145,8 @@ class _ResetPasswordEntry extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResetPasswordScreen(
-      onReset: () => Navigator.of(context)
-          .pushNamedAndRemoveUntil('/login', (r) => false),
+      onReset: () =>
+          Navigator.of(context).pushNamedAndRemoveUntil('/login', (r) => false),
     );
   }
 }

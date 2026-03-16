@@ -24,9 +24,8 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen>
     with SingleTickerProviderStateMixin {
-  static const String _appName = 'FlavorRush';
-  static const String _appSubtitle = 'Your favourite food, delivered fast';
-  static const IconData _appLogoIcon = Icons.local_fire_department_rounded;
+
+  static const String _appLogoAsset = 'assets/icons/logo.svg';
 
   final _formKey = GlobalKey<FormState>();
   final _emailCtrl = TextEditingController();
@@ -92,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen>
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  HeroSection(appName: appName, appSubtitle: appSubtitle, appLogo: _appLogoIcon),
+                  HeroSection(appName: appName, appSubtitle: appSubtitle, appLogo: _appLogoAsset),
                   FadeTransition(
                     opacity: _fadeAnim,
                     child: SlideTransition(
